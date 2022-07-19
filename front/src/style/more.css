@@ -1,0 +1,39 @@
+.morecontainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.moresrction {
+    width: 400px;
+    background-color: #0a0e13;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 50px;
+}
+
+.moretitle {
+    color: #a19bcc;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.moredis {
+    text-align: center;
+}
+
+.done {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}

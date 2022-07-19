@@ -86,14 +86,40 @@
     </div>
     </div> 
   </div>
+  <div class="recentwork">
+    <p class="recenworkttitle">Recent Work</p>
+    <div class="recentcontainer">
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">TinyURL</p>
+        <p class="seemore">see more...</p>
+      </div>
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">TinyURL</p>
+        <p class="seemore">see more...</p>
+      </div>
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">TinyURL</p>
+        <p class="seemore">see more...</p>
+      </div>
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">TinyURL</p>
+        <p class="seemore">see more...</p>
+      </div>
+    </div>
+  </div>
+  <!-- <more/> -->
 </template>
 
 <script>
-
+import more from './components/more.vue'
 
 export default {
   name: 'App',
-  components: {},
+  components: {more},
   methods : {
     togglenight () {
       document.getElementsByClassName('lamp-light')[0].classList.toggle('open')
