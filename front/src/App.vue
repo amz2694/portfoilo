@@ -43,7 +43,49 @@
       </div>
     </div>
   </div>
-
+  <div class="myexperience">
+    <p class="myextitle">My Experience</p>
+    <div class="experinececontainer">
+      <div class="lan-container">
+      <p>Frontend developer</p>
+      <div class="lancontaienr">
+        <div class="cut">
+          <p> <img src="./assets/done.png" class='done'> HTML5</p>
+          <p> <img src="./assets/done.png" class='done'> CSS3</p>
+          <p> <img src="./assets/done.png" class='done'> JavaScript</p>
+        </div>
+        <div class="cut">
+          <p> <img src="./assets/done.png" class='done'> VueJs</p>
+          <p> <img src="./assets/done.png" class='done'> Vuex</p>
+        </div>
+      </div> 
+    </div>
+    <div class="lan-container">
+      <p>Backend developer</p>
+      <div class="lancontaienr">
+        <div class="cut">
+          <p> <img src="./assets/done.png" class='done'> NodeJs</p>
+          <p> <img src="./assets/done.png" class='done'> Express</p>
+          <p> <img src="./assets/done.png" class='done'> SQL</p>
+        </div>
+        <div class="cut">
+          <p> <img src="./assets/done.png" class='done'> MySQL</p>
+          <p> <img src="./assets/done.png" class='done'> MongoDB</p>
+        </div>
+      </div> 
+    </div>
+    <div class="lan-container">
+      <p>tools</p>
+      <div class="lancontaienr">
+        <div class="cut">
+          <p> <img src="./assets/done.png" class='done'> Linux</p>
+          <p> <img src="./assets/done.png" class='done'> Git</p>
+          <p> <img src="./assets/done.png" class='done'> NPM</p>
+        </div>
+      </div> 
+    </div>
+    </div> 
+  </div>
 </template>
 
 <script>

@@ -189,6 +189,58 @@ header {
     height: 160px;
 }
 
- {
-    
+.myexperience {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experinececontainer {
+    margin-top: 50px;
+    padding: 0 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lan-container{
+    width: 300px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.lan-container:last-child {
+    width: 150px;
+}
+
+.lancontaienr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cut:first-child {
+    margin-left: 40px;
+}
+
+.cut {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.done {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(231, 102, 231);
+    border-radius: 6px;
 }
