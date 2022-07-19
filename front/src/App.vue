@@ -16,6 +16,34 @@
       <button class="abtbtn">About me</button>
     </div>
   </div>
+  <div class="aboutme-container">
+    <p class="abttitle">About Me</p>
+    <div class="aboutMe">
+      <img src="./assets/me.jpeg" class="mypic">
+      <div class="about">
+        <div class="container">
+          <div class="section">
+            <img src="./assets/completed.png">
+            <p>Experience</p>
+            <p>3 Years coding</p>
+          </div>
+          <div class="section">
+            <img src="./assets/completed.png">
+            <p>Completed</p>
+            <p>4 projects</p>
+          </div>
+          <div class="section">
+            <img src="./assets/headset.png">
+            <p>Support</p>
+            <p>online</p>
+          </div>
+        </div>
+        <p class="abttxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, blanditiis.</p>
+        <button class="contactme">Contact Me</button>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
