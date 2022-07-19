@@ -1,6 +1,15 @@
+@font-face {
+    font-family: fair;
+    src: url(../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+  * {
+    font-family: fair;
+  }
+
 body {
     margin: 0;
     padding: 0;
+    transition: all 1s ease-out;
 }
 
 header {
@@ -49,8 +58,49 @@ header {
     position: absolute;
     top: 26.25px;
     clip-path: polygon(40% 0,60% 0,80% 100%, 20% 100%);
+    transition: all 1s ease-out;
 }
 
 .dark {
     background: #000000;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 7%; 
+}
+
+.intro p {
+    color: #FFFFFF;
+    margin: 4px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.buttons button {
+    margin-top: 40px;
+    padding: 10px 15px;
+    border: 1px solid rgb(231, 102, 231);
+    background-color: #000000;
+    color: rgb(231, 102, 231);
+    transition: all 200ms;
+    font-size: 14px;
+    border-radius: 10px;
+} 
+
+.abtbtn {
+    margin-left: 15px;
+    background-color: rgb(231, 102, 231) !important;
+    color: #000000 !important;
+}
+
+.dnld:hover {
+    background-color: rgb(231, 102, 231) !important;
+    color: #000000 !important;
 }

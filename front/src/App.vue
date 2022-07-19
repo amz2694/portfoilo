@@ -7,6 +7,15 @@
       <div class="lamp-item lamp-light"></div>
     </div>
   </header>
+  <div class="intro">
+    <p>Hello, I'm</p>
+    <p class="name">Ali Mirei</p>
+    <p>MEVN Stack Developer</p>
+    <div class="buttons">
+      <button class="dnld">Download CV</button>
+      <button class="abtbtn">About me</button>
+    </div>
+  </div>
 </template>
 
 <script>
