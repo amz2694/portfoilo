@@ -47,7 +47,7 @@
     <p class="myextitle">My Experience</p>
     <div class="experinececontainer">
       <div class="lan-container">
-      <p>Frontend developer</p>
+      <p class="perfom">Frontend developer</p>
       <div class="lancontaienr">
         <div class="cut">
           <p> <img src="./assets/done.png" class='done'> HTML5</p>
@@ -61,7 +61,7 @@
       </div> 
     </div>
     <div class="lan-container">
-      <p>Backend developer</p>
+      <p class="perfom">Backend developer</p>
       <div class="lancontaienr">
         <div class="cut">
           <p> <img src="./assets/done.png" class='done'> NodeJs</p>
@@ -75,7 +75,7 @@
       </div> 
     </div>
     <div class="lan-container">
-      <p>tools</p>
+      <p class="perfom">tools</p>
       <div class="lancontaienr">
         <div class="cut">
           <p> <img src="./assets/done.png" class='done'> Linux</p>
