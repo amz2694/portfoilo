@@ -111,6 +111,36 @@
       </div>
     </div>
   </div>
+  <div class="contactmecontainer">
+    <p class="contactmetitle">Contact Me</p>
+    <div class="contanctmesection">
+      <div class="talkcontainer">
+        <p class="takltitle">Talk to me</p>
+        <div class="talksection">
+          <img src="./assets/mail.png" class="talkicon">
+          <p>Email</p>
+          <p>alimiree.zade@gmail.com</p>
+        </div>
+        <div class="talksection">
+          <img src="./assets/telegram.png" class="talkicon">
+          <p>Telegram</p>
+          <p>@amz_2694</p>
+        </div>
+        <div class="talksection">
+          <img src="./assets/github.png" class="talkicon">
+          <p>Github</p>
+          <p>amz2694</p>
+        </div>
+      </div>
+      <div class="formsection">
+        <p class="formtitle">Write me your project</p>
+        <input type="text" class="formin" placeholder="insert your name">
+        <input type="text" class="formin" placeholder="insert your email">
+        <textarea type="text" class="txtarea" rows="10" placeholder="Write your project"></textarea>
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+  </div>
   <!-- <more/> -->
 </template>
 
