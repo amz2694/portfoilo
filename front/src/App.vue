@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="header">
     <div class="lamp" @click="togglenight">
       <div class="lamp-item lamp-top"></div>
       <div class="lamp-item lamp-middle"></div>
@@ -7,7 +7,7 @@
       <div class="lamp-item lamp-light open"></div>
     </div>
   </header>
-  <div class="intro">
+  <div class="intro" id="intro">
     <p>Hello, I'm</p>
     <p class="name">Ali Mirei</p>
     <p>MEVN Stack Developer</p>
@@ -16,7 +16,7 @@
       <button class="abtbtn">About me</button>
     </div>
   </div>
-  <div class="aboutme-container">
+  <div class="aboutme-container" id="aboutme-container">
     <p class="abttitle">About Me</p>
     <div class="aboutMe">
       <img src="./assets/me.jpeg" class="mypic">
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="myexperience">
+  <div class="myexperience" id='myexperience'>
     <p class="myextitle">My Experience</p>
     <div class="experinececontainer">
       <div class="lan-container">
@@ -86,7 +86,7 @@
     </div>
     </div> 
   </div>
-  <div class="recentwork">
+  <div class="recentwork" id="recentwork"> 
     <p class="recenworkttitle">Recent Work</p>
     <div class="recentcontainer">
       <div class="recentsection">
@@ -111,7 +111,7 @@
       </div>
     </div>
   </div>
-  <div class="contactmecontainer">
+  <div class="contactmecontainer" id="contactmecontainer">
     <p class="contactmetitle">Contact Me</p>
     <div class="contanctmesection">
       <div class="talkcontainer">
@@ -140,6 +140,15 @@
         <button class="submit">Submit</button>
       </div>
     </div>
+  </div>
+  <div class="boxsection">
+    <div class="boxcontaienr">
+    <div class="box"><a href="#header"><img src="./assets/home.png" class="boximg"></a></div>
+    <div class="box"><a href="#aboutme-container"><img src="./assets/about.png" class="boximg"></a></div>
+    <div class="box"><a href="#myexperience"><img src="./assets/code.png" class="boximg"></a></div>
+    <div class="box"><a href="#recentwork"><img src="./assets/work.png" class="boximg"></a></div>
+    <div class="box"><a href="#contactmecontainer"><img src="./assets/phone.png" class="boximg"></a></div>
+  </div>
   </div>
   <!-- <more/> -->
 </template>

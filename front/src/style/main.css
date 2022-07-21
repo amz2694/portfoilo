@@ -12,6 +12,10 @@ body {
     transition: all 1s ease-out;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -392,6 +396,71 @@ header {
     background-color: #a19bcc;
     height: 50px;
     
+}
+
+.boxsection {
+    position: fixed;
+    bottom: 10px;
+    left: 43%;
+}
+
+.boxcontaienr {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #141c25;
+    padding: 0 0.4em;
+    color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 0 10px #202020;
+    bottom: 10px;
+}
+
+.boxcontaienr::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -2.5%;
+    width: 105%;
+    height: 112%;
+    border-radius: 20px;
+    background: linear-gradient(to right,#272727,#2a2a2a);
+    z-index: -1;
+    transition: background 4s;
+
+}
+
+.boxcontaienr:hover:before {
+    background: linear-gradient(to right,#9d50bb,#6e48aa);
+}
+
+.box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(to right,#9d50bb,#6e48aa);
+}
+
+.boximg {
+    cursor: pointer;
+    transition: transform 0.4s;
+    width: 32px;
+    height: 32px;
+}
+
+.box:hover .boximg{
+    transform: scale(1.5);
 }
 
 .dark {
