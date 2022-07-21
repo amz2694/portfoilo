@@ -30,7 +30,7 @@
           <div class="section">
             <img src="./assets/completed.png">
             <p>Completed</p>
-            <p>4 projects</p>
+            <p>6 projects</p>
           </div>
           <div class="section">
             <img src="./assets/headset.png">
@@ -38,7 +38,9 @@
             <p>online</p>
           </div>
         </div>
-        <p class="abttxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, blanditiis.</p>
+        <p class="abttxt">
+          3+ years of Experience in analyzing, designing developing and integrating Front-end & Back-end based appocation. Experience in developer appication using NodeJs, Express, MVC and Restful web services. Experience in developing web appication using HTML5, CSS3, JavaScript, ES6, Vue. ArchLinux user and enjoyer.
+        </p>
         <button class="contactme">Contact Me</button>
       </div>
     </div>
@@ -92,22 +94,12 @@
       <div class="recentsection">
         <img src="./assets/me.jpeg" class="recentimg">
         <p class="recenttitle">TinyURL</p>
-        <p class="seemore">see more...</p>
+        <p class="seemore" @click="see('tinyurl')">see more...</p>
       </div>
       <div class="recentsection">
         <img src="./assets/me.jpeg" class="recentimg">
-        <p class="recenttitle">TinyURL</p>
-        <p class="seemore">see more...</p>
-      </div>
-      <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
-        <p class="recenttitle">TinyURL</p>
-        <p class="seemore">see more...</p>
-      </div>
-      <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
-        <p class="recenttitle">TinyURL</p>
-        <p class="seemore">see more...</p>
+        <p class="recenttitle">Shop</p>
+        <p class="seemore" @click="see('shop')">see more...</p>
       </div>
     </div>
   </div>
@@ -150,21 +142,37 @@
     <div class="box"><a href="#contactmecontainer"><img src="./assets/phone.png" class="boximg"></a></div>
   </div>
   </div>
-  <more v-if="showMore"/>
+  <moreTiny v-if="showTiny" @close="close"/>
+  <moreShop v-if="showShop" @close="close"/>
 </template>
 
 <script>
-import more from './components/more.vue'
+import moreTiny from './components/moreTiny.vue'
+import moreShop from './components/moreShop.vue'
 
 export default {
   name: 'App',
-  components: {more},
+  components: {moreTiny,moreShop},
   data () {
     return {
-      showMore : false
+      showTiny : false,
+      showShop : false
     }
   },
   methods : {
+    close() {
+      this.showShop = false;
+      this.showTiny = false;
+    },
+    see(item) {
+      console.log(item)
+      if (item == 'tinyurl') {
+        this.showTiny = true;
+      } else
+      if (item == 'shop') {
+        this.showShop = true;
+      }
+     },
     togglenight () {
       this.showMore = !this.showMore
       document.getElementsByClassName('lamp-light')[0].classList.toggle('open');
