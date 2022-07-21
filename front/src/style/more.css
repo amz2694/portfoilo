@@ -37,3 +37,13 @@
     height: 14px;
     margin-right: 10px;
 }
+
+.white {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.white p {
+    color: #000000;
+}

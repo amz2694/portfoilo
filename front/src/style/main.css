@@ -83,7 +83,7 @@ header {
     font-size: 26px;
 }
 
-.buttons button {
+.dnld {
     margin-top: 40px;
     padding: 10px 15px;
     border: 1px solid #a19bcc;
@@ -95,8 +95,15 @@ header {
 } 
 
 .abtbtn {
+    margin-top: 40px;
+    padding: 10px 15px;
+    border: 1px solid #a19bcc;
+    color: #a19bcc;
+    transition: all 200ms;
+    font-size: 14px;
+    border-radius: 10px;
     margin-left: 15px;
-    background-color: #a19bcc !important;
+    background-color: #a19bcc;
     color: #000000 !important;
 }
 
@@ -164,6 +171,7 @@ header {
     background-color: #141c25;
     border-radius: 15px;
     width: 130px;
+    transition: all 1s ease-out;
 }
 
 .contactme {
@@ -205,6 +213,7 @@ header {
     align-items: center;
     margin-right: 30px;
     color: #FFFFFF;
+    transition: all 1s ease-out;
 }
 
 .experinececontainer {
@@ -281,6 +290,7 @@ header {
     margin-bottom: 30px;
     margin-top: 10px;
     color: #FFFFFF;
+    transition: all 1s ease-out;
 }
 
 .recentimg {
@@ -466,6 +476,16 @@ header {
 .dark {
     background: #10131f;
     color: #FFFFFF !important;
+}
+
+.white {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.white p {
+    color: #000000;
 }
 
 @media screen and (max-width: 900px) { 

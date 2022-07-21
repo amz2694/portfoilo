@@ -150,7 +150,7 @@
     <div class="box"><a href="#contactmecontainer"><img src="./assets/phone.png" class="boximg"></a></div>
   </div>
   </div>
-  <!-- <more/> -->
+  <more v-if="showMore"/>
 </template>
 
 <script>
@@ -159,13 +159,43 @@ import more from './components/more.vue'
 export default {
   name: 'App',
   components: {more},
+  data () {
+    return {
+      showMore : false
+    }
+  },
   methods : {
     togglenight () {
-      document.getElementsByClassName('lamp-light')[0].classList.toggle('open')
-      document.querySelector('body').classList.toggle('dark')
+      this.showMore = !this.showMore
+      document.getElementsByClassName('lamp-light')[0].classList.toggle('open');
+      document.querySelector('body').classList.toggle('dark');
+      const section = document.getElementsByClassName('section');
+      const lan = document.getElementsByClassName('lan-container');
+      const recent = document.getElementsByClassName('recentsection');
+      const talk = document.getElementsByClassName('talksection');
+      const form = document.getElementsByClassName('formin');
+      document.getElementsByClassName('txtarea')[0].classList.toggle('white');
+      document.getElementsByClassName('dnld')[0].classList.toggle('white');
+      for (let i=0;i<section.length;i++) {
+        section[i].classList.toggle('white');
+      }
+      for (let i=0;i<lan.length;i++) {
+        lan[i].classList.toggle('white');
+      }
+      for (let i=0;i<recent.length;i++) {
+        recent[i].classList.toggle('white');
+      }
+      for (let i=0;i<talk.length;i++) {
+        talk[i].classList.toggle('white');
+      }
+      for (let i=0;i<form.length;i++) {
+        form[i].classList.toggle('white');
+      }
+
     }
   },
   mounted () {
+    console.log(document.getElementsByClassName('lan-container'))
     document.querySelector('body').classList.add('dark')
   }
 }
