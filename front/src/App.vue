@@ -4,7 +4,7 @@
       <div class="lamp-item lamp-top"></div>
       <div class="lamp-item lamp-middle"></div>
       <div class="lamp-item lamp-bottom"></div>
-      <div class="lamp-item lamp-light"></div>
+      <div class="lamp-item lamp-light open"></div>
     </div>
   </header>
   <div class="intro">
@@ -155,6 +155,9 @@ export default {
       document.getElementsByClassName('lamp-light')[0].classList.toggle('open')
       document.querySelector('body').classList.toggle('dark')
     }
+  },
+  mounted () {
+    document.querySelector('body').classList.add('dark')
   }
 }
 </script>

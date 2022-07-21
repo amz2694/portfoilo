@@ -61,11 +61,6 @@ header {
     transition: all 1s ease-out;
 }
 
-.dark {
-    background: #10131f;
-    color: #FFFFFF;
-}
-
 .intro {
     display: flex;
     flex-direction: column;
@@ -75,7 +70,7 @@ header {
 }
 
 .intro p {
-    color: #FFFFFF;
+
     margin: 4px;
 }
 
@@ -147,6 +142,7 @@ header {
 
 .section p {
     margin: 4px;
+    color: #FFFFFF;
 }
 
 .section p:last-child {
@@ -204,6 +200,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
+    color: #FFFFFF;
 }
 
 .experinececontainer {
@@ -279,6 +276,7 @@ header {
     border-radius: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
+    color: #FFFFFF;
 }
 
 .recentimg {
@@ -367,6 +365,7 @@ header {
     border-radius: 15px;
     background-color: #141c25;
     margin-bottom: 20px;
+    color: #FFFFFF;
 } 
 
 .talksection p {
@@ -393,6 +392,11 @@ header {
     background-color: #a19bcc;
     height: 50px;
     
+}
+
+.dark {
+    background: #10131f;
+    color: #FFFFFF !important;
 }
 
 @media screen and (max-width: 900px) { 
