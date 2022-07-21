@@ -71,7 +71,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 7%; 
+    margin-top: 100px; 
 }
 
 .intro p {
@@ -203,6 +203,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
 }
 
 .experinececontainer {
@@ -308,7 +309,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 37%;
+    width: 700px;
 }
 
 .formsection {
@@ -354,6 +355,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-right: 30px;
 }
 
 .talksection {
@@ -391,4 +393,111 @@ header {
     background-color: #a19bcc;
     height: 50px;
     
+}
+
+@media screen and (max-width: 900px) { 
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .mypic {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        margin: 0 3%;
+    }
+
+    .experinececontainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .lan-container {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .recentwork {
+        height: unset;
+    }
+
+    .recentcontainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: unset;
+        margin: 0 3%;
+    }
+
+    .contactmecontainer {
+        height: unset;
+    }
+
+    .contanctmesection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .talkcontainer {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .aboutMe {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .section {
+        flex-shrink: 1;
+        width: 100px;
+        
+    }
+
+    .container {
+        flex-shrink: 1;
+    }
+
+    .mypic {
+        width: 100%;
+    }
+
+    .experinececontainer {
+        width: 84%;
+        padding: 0 7%;
+    }
+
+    .lan-container {
+        width: 100%;
+    }
+
+    .recentcontainer {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .recentsection {
+        width: 90%;
+    }
+
+    .recentimg {
+        width: 100%;
+    }
+
+    .formsection {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .formin,
+    .txtarea {
+        width: 40%;
+        font-size: unset;
+    }
 }
