@@ -101,6 +101,16 @@
         <p class="recenttitle">Shop</p>
         <p class="seemore" @click="see('shop')">see more...</p>
       </div>
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">Quran</p>
+        <p class="seemore" @click="see('quran')">see more...</p>
+      </div>
+      <div class="recentsection">
+        <img src="./assets/me.jpeg" class="recentimg">
+        <p class="recenttitle">ParsBook</p>
+        <p class="seemore" @click="see('pars')">see more...</p>
+      </div>
     </div>
   </div>
   <div class="contactmecontainer" id="contactmecontainer">
@@ -150,25 +160,33 @@
   </div>
   <moreTiny v-if="showTiny" @close="close"/>
   <moreShop v-if="showShop" @close="close"/>
+  <moreQuran v-if="showQuran" @close="close"/>
+  <morePars v-if="showPars" @close="close"/>
 </template>
 
 <script>
 import moreTiny from './components/moreTiny.vue'
 import moreShop from './components/moreShop.vue'
+import moreQuran from './components/moreQuran.vue'
+import morePars from './components/morePars.vue'
 
 export default {
   name: 'App',
-  components: {moreTiny,moreShop},
+  components: {moreTiny,moreShop,moreQuran,morePars},
   data () {
     return {
       showTiny : false,
-      showShop : false
+      showShop : false,
+      showQuran : false,
+      showPars : false
     }
   },
   methods : {
     close() {
       this.showShop = false;
       this.showTiny = false;
+      this.showQuran = false;
+      this.showPars = false;
     },
     see(item) {
       console.log(item)
@@ -177,6 +195,12 @@ export default {
       } else
       if (item == 'shop') {
         this.showShop = true;
+      } else
+      if (item == 'quran') {
+        this.showQuran = true;
+      } else
+      if (item == 'pars') {
+        this.showPars = true;
       }
      },
     togglenight () {
