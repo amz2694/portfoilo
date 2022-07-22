@@ -240,7 +240,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    width: 90%;
+    padding: unset 5%;
 }
 
 .perfom {
@@ -249,13 +250,21 @@ header {
 } 
 
 .cut:first-child {
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
 .cut {
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 5%;
     font-size: 18px;
+    width: 40%;
+}
+
+.cut p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 1;
 }
 
 .done {
