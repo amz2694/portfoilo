@@ -118,18 +118,24 @@
           <p>Telegram</p>
           <p>@amz_2694</p>
         </div>
+          <a href="https://github.com/amz2694/">
         <div class="talksection">
           <img src="./assets/github.png" class="talkicon">
           <p>Github</p>
           <p>amz2694</p>
         </div>
+          </a>
       </div>
       <div class="formsection">
         <p class="formtitle">Write me your project</p>
-        <input type="text" class="formin" placeholder="insert your name">
-        <input type="text" class="formin" placeholder="insert your email">
-        <textarea type="text" class="txtarea" rows="10" placeholder="Write your project"></textarea>
-        <button class="submit">Submit</button>
+        <form action="mailto:alimiree.zade@gmail.com" method="get" enctype="text/plain">
+          <input type="text" class="formin" placeholder="insert your name">
+          <input type="text" class="formin" placeholder="insert your email">
+          <textarea type="text" class="txtarea" rows="10" placeholder="Write your project"></textarea>
+          <input type="submit" class="submit" value="Send" />
+          
+        </form>
+        
       </div>
     </div>
   </div>

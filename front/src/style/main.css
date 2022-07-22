@@ -489,6 +489,11 @@ header {
     color: #000000;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 900px) { 
     .aboutMe {
         flex-direction: column;
