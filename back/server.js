@@ -14,5 +14,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
+app.use('/', require('./routes/root'));
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`))
