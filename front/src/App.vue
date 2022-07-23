@@ -12,8 +12,8 @@
     <p class="name">Ali Mirei</p>
     <p>MEVN Stack Developer</p>
     <div class="buttons">
-      <button class="dnld">Download CV</button>
-      <button class="abtbtn">About me</button>
+      <button class="dnld" @click="download">Download CV</button>
+      <button class="abtbtn"><a href="#aboutme-container">About me</a></button>
     </div>
   </div>
   <div class="aboutme-container" id="aboutme-container">
@@ -39,9 +39,9 @@
           </div>
         </div>
         <p class="abttxt">
-          3+ years of Experience in analyzing, designing developing and integrating Front-end & Back-end based appocation. Experience in developer appication using NodeJs, Express, MVC and Restful web services. Experience in developing web appication using HTML5, CSS3, JavaScript, ES6, Vue. ArchLinux user and enjoyer.
+          As a problem solver who loves facing challenges in my work, I'm excited to be in the deployment phase of my career as a web developer. I'm passionate and ambitious about my work, and love to be on a team that questions possibilities. Independently, I've accomplished building website projects as a freelancer for over two years.
         </p>
-        <button class="contactme">Contact Me</button>
+        <button class="contactme"><a href="#contactmecontainer">Contact Me</a></button>
       </div>
     </div>
   </div>
@@ -182,6 +182,9 @@ export default {
     }
   },
   methods : {
+    download() {
+      window.open('http://localhost:8000/cv.pdf')
+    },
     close() {
       this.showShop = false;
       this.showTiny = false;
