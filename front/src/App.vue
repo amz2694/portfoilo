@@ -92,22 +92,22 @@
     <p class="recenworkttitle">Recent Work</p>
     <div class="recentcontainer">
       <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
+        <img src="./assets/tiny1.png" class="recentimg">
         <p class="recenttitle">TinyURL</p>
         <p class="seemore" @click="see('tinyurl')">see more...</p>
       </div>
       <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
+        <img src="./assets/shop.jpg" class="recentimg">
         <p class="recenttitle">Shop</p>
         <p class="seemore" @click="see('shop')">see more...</p>
       </div>
       <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
+        <img src="./assets/quran.jpeg" class="recentimg">
         <p class="recenttitle">Quran</p>
         <p class="seemore" @click="see('quran')">see more...</p>
       </div>
       <div class="recentsection">
-        <img src="./assets/me.jpeg" class="recentimg">
+        <img src="./assets/book.png" class="recentimg">
         <p class="recenttitle">ParsBook</p>
         <p class="seemore" @click="see('pars')">see more...</p>
       </div>
@@ -138,7 +138,7 @@
       </div>
       <div class="formsection">
         <p class="formtitle">Write me your project</p>
-        <form action="mailto:alimiree.zade@gmail.com" method="get" enctype="text/plain">
+        <form action="mailto:alimiree.zade@gmail.com" method="get" enctype="text/plain" class="formcontainer">
           <input type="text" class="formin" placeholder="insert your name">
           <input type="text" class="formin" placeholder="insert your email">
           <textarea type="text" class="txtarea" rows="10" placeholder="Write your project"></textarea>

@@ -11,8 +11,6 @@
             <p><img src="../assets/done.png" class="done">Developing cart of shop with vuex and local Storage</p>
             <p><img src="../assets/done.png" class="done">Connecting appication to Backend APIs </p>
             <p><img src="../assets/done.png" class="done">Designing appication by figma design</p>
-            <p><img src="../assets/done.png" class="done">Learning Vuex</p>
-            <p><img src="../assets/done.png" class="done">Learning Vue Router</p>
         </div>
     </div>
   </div>
