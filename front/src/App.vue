@@ -158,10 +158,10 @@
     <div class="box"><a href="#contactmecontainer"><img src="./assets/phone.png" class="boximg"></a></div>
   </div>
   </div>
-  <moreTiny v-if="showTiny" @close="close"/>
-  <moreShop v-if="showShop" @close="close"/>
-  <moreQuran v-if="showQuran" @close="close"/>
-  <morePars v-if="showPars" @close="close"/>
+  <moreTiny v-show="showTiny" @close="close"/>
+  <moreShop v-show="showShop" @close="close"/>
+  <moreQuran v-show="showQuran" @close="close"/>
+  <morePars v-show="showPars" @close="close"/>
 </template>
 
 <script>
@@ -183,7 +183,7 @@ export default {
   },
   methods : {
     download() {
-      window.open('http://localhost:8000/cv.pdf')
+      window.open('http://185.202.113.223:8000/cv.pdf')
     },
     close() {
       this.showShop = false;
@@ -215,8 +215,12 @@ export default {
       const recent = document.getElementsByClassName('recentsection');
       const talk = document.getElementsByClassName('talksection');
       const form = document.getElementsByClassName('formin');
+      const more = document.getElementsByClassName('moresrction');
       document.getElementsByClassName('txtarea')[0].classList.toggle('white');
       document.getElementsByClassName('dnld')[0].classList.toggle('white');
+      for (let i=0;i<more.length;i++) {
+        more[i].classList.toggle('white');
+      }
       for (let i=0;i<section.length;i++) {
         section[i].classList.toggle('white');
       }

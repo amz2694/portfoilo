@@ -1,6 +1,6 @@
 <template>
   <div class="morecontainer" @click.self="close">
-    <div class="moresrction white">
+    <div class="moresrction">
         <div class="info">
             <p class="moretitle">Quran</p>
             <p class="moredis">
