@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 80;
 
 // built-in middleware to handle urlencoded data
 app.use(express.urlencoded({ extended: false }));
