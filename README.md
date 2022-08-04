@@ -15,6 +15,8 @@ This is my portfoilo Website. See live [amirei.ir](http://amirei.ir/).
 - NodeJs
 - Express
 - Vue 3
+- Vue Router
+- Docker
 
 ## How To Use
 
